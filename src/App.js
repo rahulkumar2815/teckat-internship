@@ -2,30 +2,37 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const teacher={
-    teacherName:"raju" ,
+  // const teacher={
+  //   teacherName:"raju" ,
     
-  }
-  const  teacher2={
-    teacherName:"raju",
-  }
-  const fun =()=>{
-    let a = 5;
-    let b = 6;
-    let sum = a+b;
-    console.log(sum);
+  // }
+  // const  teacher2={
+  //   teacherName:"raju",
+  // }
+  // const fun =()=>{
+  //   let a = 5;
+  //   let b = 6;
+  //   let sum = a+b;
+  //   console.log(sum);
       
-     }
-  if (teacher.teacher_name ===teacher2.teacher_name)
-    {
+  //    }
+  // if (teacher.teacher_name ===teacher2.teacher_name)
+  //   {
       
-     fun()
+  //    fun()
 
-    }
+  //   }
     
-     else{
-      console.log("hello ")
-    }
+  //    else{
+  //     console.log("hello ")
+  //   } 
+  const arr1 =[1,2,3,4,5,6];
+  for (let item of arr1){
+    console.log(item);
+  }
+
+
+
   return (
     <div className="App">
       <header className="App-header">
