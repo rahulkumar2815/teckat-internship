@@ -2,6 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const teacher={
+    teacherName:"raju" ,
+    
+  }
+  const  teacher2={
+    teacherName:"raju",
+  }
+  const fun =()=>{
+    let a = 5;
+    let b = 6;
+    let sum = a+b;
+    console.log(sum);
+      
+     }
+  if (teacher.teacher_name ===teacher2.teacher_name)
+    {
+      
+     fun()
+
+    }
+    
+     else{
+      console.log("hello ")
+    }
   return (
     <div className="App">
       <header className="App-header">
