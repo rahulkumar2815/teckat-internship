@@ -1,20 +1,21 @@
-import { useEffect, useState } from "react";
-
-import "./App.ccs";
-
+import { useEffect, useState } from 'react'
+import './App.css'
 
 function App() {
-  const [teacher, setteacher] = useState<string>();
-useEffect(() => {
-  setteacher("world");
-},[]);
-  return 
-  (
+  const[data, setData] = useState<string>();
+
+  useEffect(()=>{
+setData("world");
+  },[])
+
+  return (
     <>
-      <div>{teacher}</div>
-
-        </>
-
+      <div>
+{data}
+      </div>
+      
+      
+    </>
   )
 }
 
