@@ -49,6 +49,13 @@ import './App.css'
 function App() {
   const [data, setData] = useState<number>(0);
   const[numberData, setNumberData] = useState<number>(0) ;//usestate it means to change the bata
+const numberArray =[1,2,3,4];
+
+const people =[
+  {name: "rahul",age:20, status:"active"},
+  {name: "sunil",age:25,status:"inactive"},
+  {name: "ram",age:30, status:"active"},
+];
 
   useEffect(() => { addData();}, [numberData]);
   const addData = ()=>{
@@ -72,8 +79,62 @@ console.log(newData);
       <br />
       <button onClick = {decrementData}> decrementData</button>
       <div>decrementData: {numberData}</div>
-      </>
+      {numberArray.map((item,i) =>{
+        return <div key={i}>{item}</div>
+      })}
 
+
+      {/* map with object array */}
+
+      {people.map((item,i) =>{
+        return(
+          
+          <div key={i}>
+          {
+          item.status ==="active" && (
+            <>
+            
+            <div>name: {item.name}</div>
+            <div>age: {item.age}</div>
+            
+            <br/>
+            
+            </>
+          )}
+        
+          </div>
+        );
+      })}
+     <hr/>
+
+{/* else case  */}
+
+     {people.map((item,i) =>{
+        return(
+          
+          <div key={i}>
+          {
+          item.status ==="active" ? (
+            <>
+            <div>name: {item.name}</div>
+            <div>age: {item.age}</div>
+            <br/>
+            </>
+          ): (
+         
+            <>
+            
+            <div> inactive </div>
+            <br/>
+            </>
+          )}
+          </div>
+        );
+      })}
+    
+    </>
   )
 }
+
 export default App
+      
