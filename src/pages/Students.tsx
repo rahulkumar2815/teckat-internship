@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Students : React.FC  = () => {
   return (
-    <div>student</div>
+     
+    <button title="student">
+      <Link to="/student/create-student">Create-student-details</Link>
+    </button>
+
+    
   )
 }
 

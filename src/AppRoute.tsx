@@ -6,11 +6,11 @@ const AppRoute :React.FC = () => {
   return (
     <Routes>
     <Route path="" element={<HomePage/>} />
-    <Route path=" Student" element={<StudentOutlet/>} />
+    <Route path="student" element={<StudentOutlet/>} >
     <Route path="" element={<Students/>} />
-    <Route path=" Create-student" element={<CreateStudent/>} />
-    <Route path=" Update-student/:studentID" element={<UpdateStudent/>} />
-    
+    <Route path="create-student" element={<CreateStudent/>} />
+    <Route path="Update-student/:studentID" element={<UpdateStudent/>} />
+    </Route>
     </Routes>
   
   )
